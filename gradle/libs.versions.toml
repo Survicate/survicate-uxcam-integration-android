@@ -1,0 +1,35 @@
+[versions]
+minSdk = "21"
+compileSdk = "34"
+targetSdk = "34"
+kotlin = "1.9.10"
+gradlePlugin = "8.2.2"
+survicateSdk = "4.0.2-uxtest5"
+uxcam = "3.6.19"
+appcompat = "1.6.1"
+coreKtx = "1.12.0"
+material = "1.11.0"
+dokkaPlugin = "1.9.10"
+junit5Plugin = "1.10.0.0"
+junitBom = "5.10.0"
+mockk = "1.13.9"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "gradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokkaPlugin" }
+junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5Plugin" }
+
+[libraries]
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+survicate-sdk = { module = "com.survicate:survicate-sdk", version.ref = "survicateSdk" }
+uxcam = { module = "com.uxcam:uxcam", version.ref = "uxcam" }
+
+# Test dependencies
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junitBom" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
