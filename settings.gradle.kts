@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "survicate-uxcam-integration"
 include(":lib")
-include(":testapp")
+include(":example")
