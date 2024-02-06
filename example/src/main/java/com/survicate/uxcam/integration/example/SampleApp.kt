@@ -1,10 +1,10 @@
-package com.survicate.uxcam.integration.testapp
+package com.survicate.uxcam.integration.example
 
 import android.app.Application
 import com.survicate.surveys.Survicate
 import com.survicate.uxcam.integration.SurvicateUXCamIntegration
 
-class TestApp : Application() {
+class SampleApp : Application() {
 
     override fun onCreate() {
         super.onCreate()

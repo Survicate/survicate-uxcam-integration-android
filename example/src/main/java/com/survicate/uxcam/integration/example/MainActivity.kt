@@ -1,4 +1,4 @@
-package com.survicate.uxcam.integration.testapp
+package com.survicate.uxcam.integration.example
 
 import android.os.Bundle
 import android.widget.Button
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Survicate initialization is done in [TestApp] class
+        // Survicate initialization is done in the Application class
         initializeUxCam()
         setupViews()
     }

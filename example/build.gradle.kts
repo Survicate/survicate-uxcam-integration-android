@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    namespace = "com.survicate.uxcam.integration.testapp"
+    namespace = "com.survicate.uxcam.integration.example"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.survicate.uxcam.integration.testapp"
+        applicationId = "com.survicate.uxcam.integration.example"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
