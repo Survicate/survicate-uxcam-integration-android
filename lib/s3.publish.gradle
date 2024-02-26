@@ -45,6 +45,12 @@ publishing {
             pom {
                 name = "Survicate UXCam Integration"
                 url = "https://github.com/Survicate/survicate-uxcam-integration-android"
+                licenses {
+                    license {
+                        name = "BSD 3-Clause License"
+                        url = "https://opensource.org/license/bsd-3-clause"
+                    }
+                }
             }
 
             afterEvaluate {
