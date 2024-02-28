@@ -27,7 +27,8 @@ dependencies {
 
 ## Usage
 
-> Note that for the plugin to function properly, it is essential that both the Survicate and UxCam SDKs have been initialized correctly as outlined in their respective documentation:
+> Note that for the plugin to function properly, the UXCam integration must be enabled in the Survicate panel. 
+> Also, it is essential that both the Survicate and UxCam SDKs have been initialized correctly as outlined in their respective documentation:
 > - [Survicate developer docs](https://developers.survicate.com/mobile-sdk/android/)
 > - [UXCam developer docs](https://developer.uxcam.com/docs/android)
 
