@@ -5,8 +5,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.survicate.surveys.Survicate
-import com.uxcam.UXCam
-import com.uxcam.datamodel.UXConfig
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,17 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // Survicate initialization is done in the Application class
-        initializeUxCam()
         setupViews()
-    }
-
-    private fun initializeUxCam() {
-        // provide your key in the local.properties
-        val config = UXConfig.Builder(getString(R.string.uxcam_key))
-            .build()
-        UXCam.startWithConfiguration(config)
     }
 
     private fun setupViews() {
