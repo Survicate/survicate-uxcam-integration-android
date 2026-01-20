@@ -6,7 +6,7 @@ plugins {
     `maven-publish`
 }
 
-ext.set("lib_version", "1.2.0")
+ext.set("lib_version", "1.3.0")
 
 android {
     namespace = "com.survicate.uxcam.integration"
