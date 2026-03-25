@@ -5,12 +5,11 @@ targetSdk = "35"
 kotlin = "2.1.21"
 gradlePlugin = "8.13.2" # AGP 9 comes with newer built-in Kotlin, which we don't want to use yet
 survicateSdk = "7.3.0"
-uxcam = "3.8.13"
+uxcam = "3.8.14"
 appcompat = "1.7.1"
-coreKtx = "1.13.1"
+coreKtx = "1.18.0"
 material = "1.13.0"
 dokka = "2.1.0"
-junit5Plugin = "1.12.2.0"
 junitBom = "5.14.0"
 mockk = "1.14.9"
 
@@ -19,7 +18,6 @@ android-application = { id = "com.android.application", version.ref = "gradlePlu
 android-library = { id = "com.android.library", version.ref = "gradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 dokka-javadoc = { id = "org.jetbrains.dokka-javadoc", version.ref = "dokka" }
-junit5 = { id = "de.mannodermaus.android-junit5", version.ref = "junit5Plugin" }
 
 [libraries]
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
