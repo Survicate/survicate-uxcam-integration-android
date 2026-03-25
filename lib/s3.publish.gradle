@@ -1,6 +1,6 @@
 /**
  * Steps to publish:
- * 1. Bump lib_version inside the build.gradle of the lib module.
+ * 1. Bump lib_version inside the build.gradle.kts of the lib module.
  * 2. Publish the SDK locally to test the artifact build process: ./gradlew clean :lib:publishLocal
  * 3. Publish to Survicate Maven by running the "Publish SDK" workflow.
  */
