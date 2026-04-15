@@ -58,4 +58,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.survicate.sdk)
     implementation(libs.uxcam)
+
+    androidTestImplementation(libs.androidx.test.runner)
+    androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.androidx.test.uiautomator)
 }
