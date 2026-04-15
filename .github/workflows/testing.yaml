@@ -61,9 +61,7 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           disable-animations: true
           script: |
-            touch emulator.log
-            chmod 777 emulator.log
-            adb logcat >> emulator.log &
+            adb logcat > emulator.log &
             ./gradlew :example:connectedDebugAndroidTest --stacktrace
             # Defensive: kill qemu directly to avoid the action's own
             # shutdown getting stuck. The [m] prevents pkill self-match.
