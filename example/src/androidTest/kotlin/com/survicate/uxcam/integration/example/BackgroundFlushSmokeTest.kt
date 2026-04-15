@@ -15,7 +15,8 @@ import org.junit.runner.RunWith
  *  1. Launch the sample app.
  *  2. Tap the "log event" button (triggers Survicate.invokeEvent → UXCam.logEvent
  *     via SurvicateUXCamIntegration.onQuestionAnswered).
- *  3. Press home — UXCam flushes the session on background.
+ *  3. Press home — UXCam auto-stops the session on background
+ *     (https://developer.uxcam.com/docs/control-recording).
  *  4. Return to foreground.
  *
  * The assertion is "no crash", which is the realistic bar for a smoke test
@@ -47,7 +48,9 @@ class BackgroundFlushSmokeTest {
         requireNotNull(logButton) { "button_log_event not found within ${TIMEOUT_MS}ms" }
         logButton.click()
 
-        // Background — UXCam flushes here.
+        // Background — per UXCam docs: "UXCam automatically stops a session
+        // when the app goes to the background."
+        // https://developer.uxcam.com/docs/control-recording
         device.pressHome()
         device.wait(Until.hasObject(By.pkg(device.launcherPackageName).depth(0)), TIMEOUT_MS)
 
